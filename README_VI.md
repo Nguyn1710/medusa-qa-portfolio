@@ -271,7 +271,6 @@ Dự án này được xây dựng trọn vẹn end-to-end như một hồ sơ Q
 Có nền tảng phát triển phần mềm (~1 năm), đang chuyển hướng hoàn toàn sang QA/QC. Dự án này được xây dựng để chứng minh kỹ năng kiểm thử thực chiến xuyên suốt toàn bộ vòng đời QA: thiết kế test, thực thi thủ công, báo cáo lỗi, kiểm thử API, và tự động hóa.
 
 - 🔗 Repo Tự động hóa: [github.com/Nguyn1710/medusa-v2-automation](https://github.com/Nguyn1710/medusa-v2-automation)
-- 📊 Báo cáo Allure trực tiếp: [nguyn1710.github.io/medusa-v2-automation](https://nguyn1710.github.io/medusa-v2-automation/)
 - 🐛 Bug Tracker: [nguyen1710.atlassian.net](https://nguyen1710.atlassian.net/browse/SCRUM-8)
 
 ---

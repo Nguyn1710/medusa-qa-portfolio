@@ -271,7 +271,6 @@ This project was built end-to-end as a QA portfolio piece. The honest takeaways:
 Background in software development (~1 year), transitioning fully into QA/QC. This project was built to demonstrate hands-on testing skills across the full QA lifecycle: test design, manual execution, bug reporting, API testing, and automation.
 
 - 🔗 Automation Repo: [github.com/Nguyn1710/medusa-v2-automation](https://github.com/Nguyn1710/medusa-v2-automation)
-- 📊 Live Allure Report: [nguyn1710.github.io/medusa-v2-automation](https://nguyn1710.github.io/medusa-v2-automation/)
 - 🐛 Bug Tracker: [nguyen1710.atlassian.net](https://nguyen1710.atlassian.net/browse/SCRUM-8)
 
 ---
