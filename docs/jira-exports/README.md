@@ -14,8 +14,9 @@
 
 ## 🔗 Traceability Matrix
 
-- **`SCRUM-8`** $\rightarrow$ Covered by test case `[MED_AUTH_TC_004]`.
-- **`SCRUM-12`** $\rightarrow$ Detailed bug write-up available at [docs/bug-report-BUG-001.md](../bug-report-BUG-001.md).
+- **`SCRUM-8`** $\rightarrow$ Covered by test case `[MED_AUTH_TC_004]`. Bug confirmed: session redirect missing at `/app/login`.
+- **`SCRUM-12`** $\rightarrow$ Detailed bug write-up available at [docs/bug-report-BUG-002-session-timeout.md](../bug-report-BUG-002-session-timeout.md).
+- **`SCRUM-15`** $\rightarrow$ Newman run output: [docs/reports/newman-storefront-e2e-report.html](../reports/newman-storefront-e2e-report.html). Key finding: **BUG-001** discovered via this task — see [docs/bug-report-BUG-001.md](../bug-report-BUG-001.md).
 
 ---
 
