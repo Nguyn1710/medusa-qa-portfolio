@@ -217,7 +217,7 @@ The Postman collection was executed via Newman CLI to perform automated smoke te
 | Assertions Failed | **2** (confirmed defects — see BUG-001) |
 | Runner | Newman CLI + htmlextra reporter |
 
-- 📊 **Live Interactive Report:** [View Newman HTML Report ↗](https://htmlpreview.github.io/?https://github.com/Nguyn1710/medusa-qa-portfolio/blob/main/docs/reports/newman-storefront-e2e-report.html)
+- 📊 **Live Interactive Report:** [View Newman HTML Report ↗](https://nguyn1710.github.io/medusa-qa-portfolio/reports/newman-storefront-e2e-report.html)
 - 📁 **Source File:** [docs/reports/newman-storefront-e2e-report.html](./docs/reports/newman-storefront-e2e-report.html)
 
 ![Newman API Smoke Test Report — Storefront E2E Checkout Flow](./screenshots/newman-report.png)

@@ -217,7 +217,7 @@ Bộ sưu tập Postman được thực thi qua Newman CLI để thực hiện k
 | Assertion Failed | **2** (lỗi đã xác nhận — xem BUG-001) |
 | Công cụ chạy | Newman CLI + htmlextra reporter |
 
-- 📊 **Báo cáo trực tiếp (Live):** [Xem Báo Cáo Newman HTML ↗](https://htmlpreview.github.io/?https://github.com/Nguyn1710/medusa-qa-portfolio/blob/main/docs/reports/newman-storefront-e2e-report.html)
+- 📊 **Báo cáo trực tiếp (Live):** [Xem Báo Cáo Newman HTML ↗](https://nguyn1710.github.io/medusa-qa-portfolio/reports/newman-storefront-e2e-report.html)
 - 📁 **File gốc:** [docs/reports/newman-storefront-e2e-report.html](./docs/reports/newman-storefront-e2e-report.html)
 
 ![Báo Cáo Newman API Smoke — Storefront E2E Checkout Flow](./screenshots/newman-report.png)
