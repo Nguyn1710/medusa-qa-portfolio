@@ -22,7 +22,7 @@ Dự án này được chia thành hai repository — có chủ đích, nhằm m
 
 | Repository | Nội Dung Bên Trong |
 |---|---|
-| 📋 **[`medusa-qa-portfolio`](https://github.com/Nguyn1710/medusa-v2)**| Chiến lược kiểm thử, Test case thủ công (Excel), Báo cáo lỗi (Jira), Số liệu kiểm thử & Dashboard |
+| 📋 **[`medusa-qa-portfolio`](https://github.com/Nguyn1710/medusa-qa-portfolio)**| Chiến lược kiểm thử, Test case thủ công (Excel), Báo cáo lỗi (Jira), Số liệu kiểm thử & Dashboard |
 | 🤖 **[`medusa-v2-automation`](https://github.com/Nguyn1710/medusa-v2-automation)** | Framework tự động hóa Java — Selenium UI + REST Assured API + TestNG + Allure + CI/CD |
 
 ---
@@ -205,6 +205,27 @@ Kiểm thử thủ công được thực hiện trước — có chủ đích. T
 
 ---
 
+## 📮 Kiểm Thử API Smoke — Báo Cáo Newman
+
+Bộ sưu tập Postman được thực thi qua Newman CLI để thực hiện kiểm thử smoke tự động trên toàn bộ luồng Storefront E2E Checkout.
+
+| Chỉ số | Giá trị |
+|---|---|
+| Tổng số Request | 22 |
+| Tổng số Assertion | 55 |
+| Assertion Passed | 53 |
+| Assertion Failed | **2** (lỗi đã xác nhận — xem BUG-001) |
+| Công cụ chạy | Newman CLI + htmlextra reporter |
+
+- 📊 **Báo cáo trực tiếp (Live):** [Xem Báo Cáo Newman HTML ↗](https://htmlpreview.github.io/?https://github.com/Nguyn1710/medusa-qa-portfolio/blob/main/docs/reports/newman-storefront-e2e-report.html)
+- 📁 **File gốc:** [docs/reports/newman-storefront-e2e-report.html](./docs/reports/newman-storefront-e2e-report.html)
+
+![Báo Cáo Newman API Smoke — Storefront E2E Checkout Flow](./screenshots/newman-report.png)
+
+> **Phát hiện chính:** 2 assertion thất bại liên quan trực tiếp đến **BUG-001** — endpoint truy xuất đơn hàng không xác thực trả về `HTTP 200` thay vì `401 Unauthorized`. Đây là lỗ hổng bảo mật đã được mô tả trong phần Bug ở trên.
+
+---
+
 ## 📂 Nội Dung Trong Repository Này
 
 ```
@@ -215,7 +236,12 @@ medusa-qa-portfolio/
 ├── 📋 docs/
 │   ├── test-strategy.md           # Phương pháp kiểm thử dựa trên rủi ro, phạm vi, tiêu chí vào/ra
 │   ├── bug-report-BUG-001.md      # Lỗi bảo mật — bài viết đầy đủ
-│   └── jira-exports/              # Bản xuất ticket Jira SCRUM-8 và các ticket quan trọng khác
+│   ├── jira-exports/              # Bản xuất ticket Jira SCRUM-8 và các ticket quan trọng khác
+│   └── reports/
+│       └── newman-storefront-e2e-report.html  # Báo cáo Newman HTML tương tác
+│
+├── 📸 screenshots/
+│   └── newman-report.png          # Ảnh chụp dashboard Newman
 │
 └── README.md                      # ← Chính là tài liệu này
 ```

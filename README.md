@@ -205,6 +205,27 @@ The 260 manual test cases served as the specification for automation. The 163 au
 
 ---
 
+## 📮 API Smoke Testing — Newman Execution Report
+
+The Postman collection was executed via Newman CLI to perform automated smoke testing across the full Storefront E2E Checkout Flow.
+
+| Metric | Value |
+|---|---|
+| Total Requests | 22 |
+| Total Assertions | 55 |
+| Assertions Passed | 53 |
+| Assertions Failed | **2** (confirmed defects — see BUG-001) |
+| Runner | Newman CLI + htmlextra reporter |
+
+- 📊 **Live Interactive Report:** [View Newman HTML Report ↗](https://htmlpreview.github.io/?https://github.com/Nguyn1710/medusa-qa-portfolio/blob/main/docs/reports/newman-storefront-e2e-report.html)
+- 📁 **Source File:** [docs/reports/newman-storefront-e2e-report.html](./docs/reports/newman-storefront-e2e-report.html)
+
+![Newman API Smoke Test Report — Storefront E2E Checkout Flow](./screenshots/newman-report.png)
+
+> **Key finding:** The 2 assertion failures directly map to **BUG-001** — the unauthenticated order retrieval endpoint returning `HTTP 200` instead of `401 Unauthorized`. This is the security vulnerability described in the bug section above.
+
+---
+
 ## 📂 What's in This Repository
 
 ```
@@ -215,7 +236,12 @@ medusa-qa-portfolio/
 ├── 📋 docs/
 │   ├── test-strategy.md           # Risk-based test approach, scope, entry/exit criteria
 │   ├── bug-report-BUG-001.md      # Security bug — full write-up
-│   └── jira-exports/              # SCRUM-8 and other key Jira ticket exports
+│   ├── jira-exports/              # SCRUM-8 and other key Jira ticket exports
+│   └── reports/
+│       └── newman-storefront-e2e-report.html  # Interactive Newman HTML report
+│
+├── 📸 screenshots/
+│   └── newman-report.png          # Newman dashboard screenshot
 │
 └── README.md                      # ← This file
 ```
